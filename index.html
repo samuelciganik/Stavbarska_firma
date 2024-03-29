@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cigánik s.r.o.</title>
+    <link rel="stylesheet" href="styleI.css">
+</head>
+<body>
+    <header>
+        <h1>Cigánik s.r.o.</h1>
+    </header>
+    <button id="toggleButton">Tmavý</button>
+    <nav>
+        <a href="ponuka_prace.html">Ponuka práce</a>
+        <a href="fotogaleria.html">Fotogaléria</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <section>
+        <h2>Vitajte na stránke spoločnosti Cigánik s.r.o.</h2>
+        <p>Stavbárska firma.</p>
+        
+<!-- Kód pre portfólio -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="Fasada.jpg" alt="Project 1" class="obr1_2">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Fasada2.jpg" alt="Project 2" class="obr1_2">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Fasada3.jpg" alt="Project 3" class="obr1">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Fasada4.jpg" alt="Project 4" class="obr1">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+    <!-- Konec kódu pre portfólio -->
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Cigánik s.r.o. Všetky práva vyhradené.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        function plusSlides(n) {
+            showSlides((slideIndex += n));
+        }
+
+        function currentSlide(n) {
+            showSlides((slideIndex = n));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            showSlides(slideIndex);
+        });
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>

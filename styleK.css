@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('Cehly%202.jpg'); /* Cesta k obrázku */
+    background-size: cover; /* Obrázok sa prispôsobí veľkosti hlavičky */
+    background-position: center; /* Obrázok sa umiestni na strede */
+    height: 200px; /* Výška hlavičky */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white; /* Farba textu */
+}
+
+nav {
+    text-align: center;
+    padding: 1em;
+    background-color: #E2725B;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 1em;
+}
+
+section {
+    padding: 2em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #E2725B;
+    color: #fff;
+}
+
+.blokovy-text {
+  width: 20%; /* Šírka bloku */
+  max-width: 33.33%; /* Maximálna šírka bloku */
+  margin-bottom: 20px; /* Odsadenie pod blokom */
+  background-color: #f0f0f0; /* Farba pozadia */
+  border: 1px solid #ccc; /* Okraj */
+  padding: 20px; /* Odsadenie vnútri bloku */
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+#toggleButton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}

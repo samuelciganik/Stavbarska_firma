@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('Cehly%202.jpg'); /* Cesta k obrázku */
+    background-size: cover; /* Obrázok sa prispôsobí veľkosti hlavičky */
+    background-position: center; /* Obrázok sa umiestni na strede */
+    height: 200px; /* Výška hlavičky */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white; /* Farba textu */
+}
+
+nav {
+    text-align: center;
+    padding: 1em;
+    background-color: #E2725B;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 1em;
+}
+
+section {
+    padding: 2em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #E2725B;
+    color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: wrap;
+}
+
+.nazvy {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.nazvy h3 {
+    width: calc(33.33% - 20px);
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.blokovy-text {
+  width: calc(33.33% - 20px); /* Šírka bloku - berieme 33.33% šírky obrazovky a odpočítame odsadenie */
+  float: left; /* Zarovnanie blokov vedľa seba */
+  margin: 0 10px 20px 0; /* Odsadenie medzi blokmi */
+  background-color: #f0f0f0; /* Farba pozadia */
+  border: 1px solid #ccc; /* Okraj */
+  padding: 20px; /* Odsadenie vnútri bloku */
+  text-align: justify;
+}
+
+.blokovy-text:last-child {
+  margin-right: 0; /* Žiadny odstup pre posledný blok */
+}
+
+h2 {
+  text-align: center
+}
+
+form {
+    width: 50%; /* Šírka formulára */
+    margin: auto; /* Zarovnanie do stredu */
+    padding: 20px; /* Odsadenie vnútri formulára */
+            
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; /* Rozšírenie vstupných polí na plnú šírku */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Okraj */
+    box-sizing: border-box; /* Box-sizing */
+}
+
+form input[type="submit"] {
+    width: 100%; /* Rozšírenie tlačidla na plnú šírku */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Plynulá zmena farby */
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+#toggleButton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
