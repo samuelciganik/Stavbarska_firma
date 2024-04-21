@@ -7,7 +7,7 @@
 }
 
 header {
-    background-image: url('Cehly%202.jpg'); /* Cesta k obrázku */
+    background-image: url('Cehly.jpg'); /* Cesta k obrázku */
     background-size: cover; /* Obrázok sa prispôsobí veľkosti hlavičky */
     background-position: center; /* Obrázok sa umiestni na strede */
     height: 200px; /* Výška hlavičky */
@@ -43,10 +43,9 @@ footer {
     background-color: #E2725B;
     color: #fff;
 }
-        }
 #portfolio .obr1_2,
         #portfolio .obr1 {
-            max-width: 300px; /* Alebo akúkoľvek inú hodnotu, ktorá vám vyhovuje */
+            max-width: 500px; /* Alebo akúkoľvek inú hodnotu, ktorá vám vyhovuje */
             width: 100%;
             height: auto;
 }
@@ -66,4 +65,65 @@ body {
   position: fixed;
   top: 20px;
   right: 20px;
+}
+
+p {
+    font-size:20px;
+    font-family:Arial,sans-serif;
+    font-weight:bold;
+    margin: 0; /* Odstránenie medzier */
+    text-align: justify;
+    padding: 2px;
+}
+
+/* Zabezpečí zarovnanie textu na stred stránky */
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Zabezpečí zarovnanie obrázkového slideru na stred sekcie */
+.slideshow-container {
+    position: relative;
+    max-width: 500px; /* Upravte podľa potreby */
+    margin: auto;
+    text-align: center; /* Zarovnanie obrázkov na stred */
+}
+
+/* Ďalšie CSS pravidlá ponechajte rovnaké ako v pôvodnom kóde */
+.portfolio-title {
+    text-align: center;
+    margin-top: 30px; /* Upravte podľa potreby */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5); /* Tmavšie pozadie */
+    border: none;
+    z-index: 1; /* Umiestnenie nad obrázkami */
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
