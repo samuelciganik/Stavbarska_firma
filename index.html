@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cigánik s.r.o.</title>
     <link rel="stylesheet" href="styleI.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
@@ -17,27 +18,38 @@
         <a href="kontakt.html">Kontakt</a>
     </nav>
     <section>
+    <section>
         <h2>Vitajte na stránke spoločnosti Cigánik s.r.o.</h2>
-        <p>Stavbárska firma.</p>
+        <p>Ako začínajúca stavebná firma sme len dvojica, ale máme veľkú vášeň a odhodlanie stavať a udržiavať budovy a infraštruktúru.</p> 
+        <p>Naša malá veľkosť nás neobmedzuje, skôr nás motivuje, aby sme sa ešte viac sústredili na každý detail a každý projekt.</p>
+        <p>Máme za sebou odborné vzdelanie v oblasti architektúry a stavebníctva, čo nám dáva základný kameň pre našu prácu.</p> 
+        <p>Spolu tvoríme tím, ktorý sa stará o každý aspekt projektu, od návrhu cez výstavbu až po dodávku.</p>
+        <p>Aj keď sme len dvojica, naším cieľom je spolupracovať s klientmi tak, aby sme im poskytli vynikajúce služby a splnili ich očakávania.</p> 
+        <p>Sme otvorení novým nápadom a vždy sa snažíme prispôsobiť sa potrebám každého klienta.</p>
+        <p>Dodržiavame právne a regulačné požiadavky a dbáme na bezpečnosť našej práce.</p> 
+        <p>Aj keď sme malá firma, bezpečnosť a kvalita sú pre nás prioritou.</p>
+        <p>Sledujeme najnovšie technologické trendy v stavebníctve a snažíme sa ich využiť na zlepšenie našej práce.</p> 
+        <p>Aj keď sme malá firma, neustále sa snažíme rásť a zlepšovať sa.</p>
+        <p>Naším cieľom je stať sa konkurencieschopnou firmou v odvetví stavebníctva a budovať dlhodobé vzťahy so svojimi klientmi na základe kvality a dôvery.</p>
+        </section>
         
-<!-- Kód pre portfólio -->
     <section id="portfolio">
-        <h2>Portfolio</h2>
+        <h2 class="portfolio-title">Ukážka našej práce</h2>
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img src="Fasada.jpg" alt="Project 1" class="obr1_2">
+                <img src="40.jpg" alt="Project 1" class="obr1_2">
             </div>
 
             <div class="mySlides fade">
-                <img src="Fasada2.jpg" alt="Project 2" class="obr1_2">
+                <img src="42.jpg" alt="Project 2" class="obr1_2">
             </div>
 
             <div class="mySlides fade">
-                <img src="Fasada3.jpg" alt="Project 3" class="obr1">
+                <img src="45.jpg" alt="Project 3" class="obr1">
             </div>
 
             <div class="mySlides fade">
-                <img src="Fasada4.jpg" alt="Project 4" class="obr1">
+                <img src="46.jpg" alt="Project 4" class="obr1">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -51,54 +63,12 @@
             <span class="dot" onclick="currentSlide(4)"></span>
         </div>
     </section>
-    <!-- Konec kódu pre portfólio -->
+        
     </section>
 
-    
     <footer>
         <p>&copy; 2024 Cigánik s.r.o. Všetky práva vyhradené.</p>
     </footer>
-
-    <script>
-        let slideIndex = 1;
-
-        function showSlides(n) {
-            let i;
-            const slides = document.getElementsByClassName("mySlides");
-            const dots = document.getElementsByClassName("dot");
-
-            if (n > slides.length) {
-                slideIndex = 1;
-            }
-
-            if (n < 1) {
-                slideIndex = slides.length;
-            }
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-
-        function plusSlides(n) {
-            showSlides((slideIndex += n));
-        }
-
-        function currentSlide(n) {
-            showSlides((slideIndex = n));
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            showSlides(slideIndex);
-        });
-    </script>
     <script src="script.js"></script>
 
 </body>
